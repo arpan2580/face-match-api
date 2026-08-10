@@ -1,0 +1,102 @@
+# ---------------------------
+# Python
+# ---------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ---------------------------
+# Virtual environments
+# ---------------------------
+venv/
+env/
+ENV/
+.venv/
+
+# ---------------------------
+# Flask
+# ---------------------------
+instance/
+.webassets-cache
+
+# ---------------------------
+# Environment variables / secrets
+# ---------------------------
+.env
+.env.*
+!.env.example
+
+# ---------------------------
+# Database (SQLite)
+# ---------------------------
+*.db
+*.sqlite
+*.sqlite3
+users.db
+
+# ---------------------------
+# Generated / uploaded data
+# ---------------------------
+profile_images/*.pkl
+uploads/
+tmp/
+
+# ---------------------------
+# Model weights (insightface / onnxruntime)
+# Per project decision: .onnx model weight files are NOT bundled in this repo.
+# Users must download them separately and place them in models/ — see the
+# "Model Setup" section in README.md. This keeps the actual weight files out
+# of git while still letting the models/ directory itself (and any non-weight
+# files in it, e.g. a .gitkeep or loader code) be tracked.
+# ---------------------------
+models/*.onnx
+models/**/*.onnx
+.insightface/
+
+# ---------------------------
+# Logs
+# ---------------------------
+*.log
+logs/
+
+# ---------------------------
+# IDE / editor
+# ---------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---------------------------
+# OS files
+# ---------------------------
+.DS_Store
+Thumbs.db
+
+# ---------------------------
+# Testing / coverage
+# ---------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---------------------------
+# Docker (local overrides, not the Dockerfile itself)
+# ---------------------------
+docker-compose.override.yml
+*.tar
+
+# ---------------------------
+# CI/CD
+# Do NOT gitignore .github/workflows/*.yml — those need to be committed for
+# GitHub Actions to run. This entry only excludes local secret files some
+# people use for testing deploy scripts locally.
+# ---------------------------
+*.pem
+deploy_key*
+.ssh/

@@ -1,0 +1,8 @@
+Flask==2.2.5
+Flask-SQLAlchemy==3.0.5
+Pillow==9.5.0
+gunicorn==21.2.0
+numpy==1.23.5
+opencv-python-headless==4.10.0.84
+insightface==0.7.3
+onnxruntime==1.18.1

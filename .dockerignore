@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+venv/
+.env
+profile_images/
+.git/
+.gitignore
+.tar
+DockerfileOLD
+*.sqlite3
+*.log
