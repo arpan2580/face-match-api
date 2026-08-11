@@ -22,6 +22,7 @@ A companion Flutter mobile app that consumes these four endpoints and demonstrat
 This service exposes four REST endpoints:
 
 | Endpoint | Method | Purpose |
+|---|---|---|
 | `/create-profile` | POST | Registers a new user with name, email, phone, and a profile image. Compresses and stores the image, generates a face embedding, and saves everything to SQLite. |
 | `/find-image` | POST | Accepts a single selfie image and returns the best-matching stored profile, if similarity ≥ 0.6. |
 | `/find-group-image` | POST | Accepts a group photo, detects all faces, and returns every stored profile that matches any detected face (similarity ≥ 0.6). |
